@@ -8,7 +8,7 @@ app = FastAPI()
 @app.post("/v1/chat/completions")
 async def chat_completions(request: Request):
     body = await request.json()
-    provider = body.get('provider', 'openai')
+    provider = body.get('provider', 'gemini')
     model = body.get('model', 'gpt-3.5-turbo')
     messages = body.get('messages', [])
     try:
