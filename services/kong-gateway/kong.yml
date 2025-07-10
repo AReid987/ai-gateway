@@ -1,4 +1,8 @@
 _format_version: '3.0'
+consumers:
+  - username: testuser
+    keyauth_credentials:
+      - key: test-api-key-123
 services:
   - name: unified-llm-api
     url: http://unified-llm-api:8080
