@@ -1,11 +1,19 @@
-
-_format_version: "3.0"
-_transform: true
-
+_format_version: '3.0'
 services:
-  - name: example-service
-    url: http://httpbin.org/anything
+  - name: unified-llm-api
+    url: http://unified-llm-api:8080
     routes:
-      - name: example-route
+      - name: unified-llm-api-route
         paths:
-          - /example
+          - /llm
+        strip_path: false
+        plugins:
+          - name: key-auth
+            config:
+              key_names:
+                - apikey
+              hide_credentials: false
+          - name: rate-limiting
+            config:
+              minute: 60
+              policy: local
