@@ -1,0 +1,2 @@
+# Project Journal\n\nCentral hub for tracking all project artifacts and decisions.
+## Directory Structure\n\n- archive: Historical records\n- decisions: Architecture Decision Records (ADRs)\n- docs: Supporting documentation\n- logs: Activity logs\n- planning: Roadmaps and timelines\n- processes: Workflow definitions\n- reports: Status reports\n- sessions: Meeting notes\n- snippets: Reusable code/config snippets\n- tasks: Task breakdowns\n- templates: Standard templates
